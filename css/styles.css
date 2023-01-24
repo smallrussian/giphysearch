@@ -32,9 +32,8 @@ header nav ul li {
   width: max-content;
 }
 
-img {
-  height: 400px;
-  width: 400px;
+#results {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
