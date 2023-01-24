@@ -1,14 +1,14 @@
-header {
+html header {
   padding: 40px 0;
 }
-header .inner-header .logo {
+html header .inner-header .logo {
   float: left;
 }
-header nav ul {
+html header nav ul {
   list-style: none;
   float: right;
 }
-header nav ul li {
+html header nav ul li {
   margin: 0 10px;
 }
 
@@ -34,6 +34,16 @@ header nav ul li {
 
 #results {
   padding: 20px;
+}
+
+footer {
+  bottom: 2px;
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
