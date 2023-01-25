@@ -13,7 +13,7 @@ $(document).on('submit', function(event){
                 console.log(gif.images)
                 // $("#results").append(`<img src ="${gif.images.original.webp}"/>`)
                 // $("#results > div.row").append(`<img src ="${gif.images.fixed_height.webp}"/>`)
-                $("#results > div.row").append(`<div class="image col-lg-3"><img src = "${gif.images.fixed_width.webp}"/></div>`);
+                $("#results > div.row").append(`<div class="image col-lg-3"><a href="${gif.images.original.url}"><img src="${gif.images.fixed_width.webp}"/></a></div>`);
             });
         } 
     })
