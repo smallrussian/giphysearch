@@ -1,0 +1,46 @@
+header {
+    padding: 40px 0;
+    
+    .inner-header{
+        .logo {
+            float: left;
+        }
+    }
+    nav {
+        ul {
+            list-style: none;
+            float: right;
+            li {
+                margin: 0 10px;
+            }
+        }
+        }
+}
+#input{
+    width:100%;
+    height:100%;
+    display: grid;
+    align-items:center;
+    justify-content:center;
+    form{
+        label{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        input{
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        .submitButton{
+            width: max-content;
+        }
+    }
+    
+    
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}

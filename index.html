@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header id="site-header">
+        <div class="container">
+            <div class="inner-header">
+                <span class="logo">
+                    GIF Search
+                </span>
+            
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+    </header>
+    
+        <div class="container">
+            <section id="input">
+                <form id="form">
+                    <div class="row justify-content-sm-between">
+                        <div class="mb-3  col-lg-6 text-center">
+                        <label for="searchTerm" class="form-label">GIF Search : </label>
+                        <input type="text" class="form-control" id="searchTerm" >
+                        
+                      </div>
+                      <div class="mb-3  col-lg-6 text-center">
+                        <label for="numberOfSearch" class="form-label">No. of GIFs: </label>
+                        <input type="number" class="form-control" id="numberOfSearch">
+                    </div>
+                    
+                    
+                </div>
+                <div class="submitButton">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+            
+            </section>
+        </div>
+    </div>
+
+   <div class="container">
+    <section id="results">
+        <div class="row"></div>
+    </section>
+   </div>
+
+    
+    <footer>
+        <div class="container">
+            powered by Giphy
+        </div>
+    </footer>
+    
+</body>
+</html>
