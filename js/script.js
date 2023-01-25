@@ -1,7 +1,7 @@
 
 $(document).on('submit', function(event){
     event.preventDefault()
-    $("#results").empty()
+    $("#results > div.row").empty()
     let number = Number($('#numberOfSearch').val())
     let input = $("#searchTerm").val()
     // alert(input)
@@ -12,7 +12,8 @@ $(document).on('submit', function(event){
     
                 console.log(gif.images)
                 // $("#results").append(`<img src ="${gif.images.original.webp}"/>`)
-                $("#results").append(`<img src ="${gif.images.fixed_height.webp}"/>`)
+                // $("#results > div.row").append(`<img src ="${gif.images.fixed_height.webp}"/>`)
+                $("#results > div.row").append(`<div class="image col-lg-3"><img src = "${gif.images.fixed_width.webp}"/></div>`);
             });
         } 
     })
