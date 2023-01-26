@@ -42,10 +42,12 @@ body #results {
 }
 body #results .image {
   padding: 10px;
-  display: flex;
-  align-items: center;
 }
-body footer {
+body #results .image a img {
+  width: 300px;
+  height: auto;
+}
+body #results footer {
   bottom: 0;
   display: inline;
   height: 40px;
@@ -53,6 +55,34 @@ body footer {
   text-align: center;
   vertical-align: middle;
   width: 100%;
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+  body #results .image a {
+    margin: 0 auto;
+  }
+  body #results .image a img {
+    width: 250px;
+    height: auto;
+  }
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+  body #results .image a {
+    margin: 0 auto;
+  }
+  body #results .image a img {
+    width: 220px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  body #results .image a {
+    margin: 0 auto;
+  }
+  body #results .image a img {
+    width: 200px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
