@@ -1,14 +1,22 @@
+.floatleft {
+  float: left;
+}
+
+.mainbg {
+  background: #1e1d23;
+}
+
 body {
-  min-height: 100vh;
-  position: relative;
+  background: #1e1d23;
   display: flex;
   flex-direction: column;
 }
 body header {
   padding: 40px 0;
+  background: #121119;
 }
 body header .inner-header .logo {
-  float: left;
+  color: white;
 }
 body header nav ul {
   list-style: none;
@@ -22,11 +30,14 @@ body #input {
   height: 100%;
   display: grid;
   align-items: center;
+  background: #1e1d23;
   justify-content: center;
 }
 body #input form label {
+  padding-top: 5px;
   display: inline-block;
   vertical-align: middle;
+  color: white;
 }
 body #input form input {
   display: inline-block;
@@ -47,14 +58,17 @@ body #results .image a img {
   width: 300px;
   height: auto;
 }
-body #results footer {
+body footer {
+  position: fixed;
   bottom: 0;
-  display: inline;
-  height: 40px;
-  margin-top: auto;
-  text-align: center;
-  vertical-align: middle;
   width: 100%;
+  height: fit-content;
+  background-color: #121119;
+  color: white;
+  text-align: center;
+}
+body footer #logo {
+  padding-top: 10px;
 }
 
 @media (max-width: 1399px) and (min-width: 1200px) {
