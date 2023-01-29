@@ -21,9 +21,12 @@ body{
         nav {
             ul {
                 list-style: none;
-                float: right;
+                
                 li {
                     margin: 0 10px;
+                    a {
+                        color: red;
+                    }
                 }
             }
             }
