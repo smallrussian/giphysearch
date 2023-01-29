@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script+Swash+Caps&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Aboreto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap';
 .floatleft {
   float: left;
 }
@@ -8,8 +11,6 @@
 
 body {
   background: #1e1d23;
-  display: flex;
-  flex-direction: column;
 }
 body header {
   background: #121119;
@@ -19,15 +20,16 @@ body header nav {
   overflow: hidden;
 }
 body header nav .logo {
-  font-size: 25px;
+  font-size: 2.25em;
   font-weight: bold;
+  font-family: "Bebas Neue";
   color: white;
 }
 body header nav .rightSection {
   float: right;
 }
 body header nav .links {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Aboreto";
   font-weight: bold;
   float: left;
   color: white;
@@ -79,6 +81,7 @@ body #results .image a img {
 body footer {
   position: fixed;
   bottom: 0;
+  font-family: "Saira Condensed", sans-serif;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -91,6 +94,16 @@ body footer #logo {
   padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+  header nav .rightSection {
+    float: none !important;
+  }
+  header nav .links {
+    float: none !important;
+    display: block !important;
+    text-align: left !important;
+  }
+}
 @media (max-width: 1399px) and (min-width: 1200px) {
   body #results .image a {
     margin: 0 auto;
@@ -116,15 +129,5 @@ body footer #logo {
   body #results .image a img {
     width: 200px;
     height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  header nav .rightSection {
-    float: none;
-  }
-  header nav .links {
-    float: none;
-    display: block;
-    text-align: left;
   }
 }/*# sourceMappingURL=styles.css.map */

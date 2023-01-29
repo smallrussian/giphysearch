@@ -1,4 +1,6 @@
-
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script+Swash+Caps&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Aboreto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap';
 $headfoot-background: #121119;
 $other-background: #1e1d23;
 .floatleft{float: left;}
@@ -7,23 +9,23 @@ $other-background: #1e1d23;
 }
 body{
     background: $other-background;
-    display: flex;
-    flex-direction: column;
+    
     header{
         background: $headfoot-background;
         nav{
             padding: 10px;
             overflow: hidden;
             .logo{
-                font-size: 25px;
+                font-size: 2.25em;
                 font-weight: bold;
+                font-family: 'Bebas Neue';
                 color: white;
             }
             .rightSection {
                 float: right;
             }
             .links{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: 'Aboreto';
                 font-weight: bold;
                 float: left;
                 color:white;
@@ -88,7 +90,7 @@ body{
 footer {
     position: fixed;
     bottom: 0;
-
+    font-family: 'Saira Condensed', sans-serif;
     width: 100%;
     height: fit-content;
     background-color: $headfoot-background;
@@ -120,6 +122,21 @@ footer {
 //     }
     
 // }
+
+@media (max-width: 768px) {
+    header{
+        nav{
+            .rightSection{
+                float: none !important;;
+            }
+            .links{
+                float: none !important;
+                display: block !important;
+                text-align: left!important;
+            }
+        }
+    }
+}
 
 @media (max-width: 1399px) and (min-width: 1200px) {
     body {
@@ -174,17 +191,3 @@ footer {
     
 }
 
-@media screen and (max-width: 768px) {
-    header{
-        nav{
-            .rightSection{
-                float:none;
-            }
-            .links{
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-    }
-}
