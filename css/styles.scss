@@ -59,6 +59,9 @@ body{
                 display: inline-block;
                 padding: 12px 20px;
                 margin: 8px 0;
+                &:focus{
+                    border: 5px solid violet;
+                }
             }
             .submitButton{
                 width: max-content;
